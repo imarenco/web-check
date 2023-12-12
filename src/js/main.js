@@ -18,7 +18,7 @@ async function updateValue(event) {
 
 function productCardTemplate(product) {
   return `<li class="product-card">
-    <a href="/movie/index.html?movieId=${product.id}">
+    <a href="./movie/index.html?movieId=${product.id}">
       <img
         class="card_img"
         src="${product.image}"
