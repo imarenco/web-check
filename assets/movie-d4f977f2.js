@@ -1,0 +1,3 @@
+import{a,g as m,b as o,s as c,r as g}from"./api-93959e8c.js";async function l(){const n=a("movieId"),t=m(n),e=t||await o(n);t||c(n,e),d(e)}function r(n){return`<li class="ingredient_item">
+    ${n.number}. ${n==null?void 0:n.step} Ingredients: ${n.ingredients.map(t=>t.name).join(", ")}
+  </li>`}function d(n){var s,i;console.log(n),document.getElementById("title").innerHTML=n.title,document.getElementById("img").src=n.image,document.getElementById("summary").innerHTML=n.summary;const t=document.getElementById("instructions"),e=(i=(s=n==null?void 0:n.analyzedInstructions)==null?void 0:s[0])==null?void 0:i.steps;g(r,t,e)}l();
