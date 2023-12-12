@@ -4,4 +4,5 @@
 web_modules
 node_modules
 dist
+build
 .env
