@@ -93,6 +93,10 @@ body {
   color: white;
 }
 
+.ingredient_item {
+  margin-top: 15px;
+}
+
 #instructions {
   background-color:#ed6e3a;
   padding: 50px 30px;

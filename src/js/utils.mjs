@@ -36,6 +36,6 @@ export function renderListWithTemplate(templateFn, parentElement, products, posi
     if (clear) {
         parentElement.innerHTML = "";
     }
-    const htmlItems = products?.map((product) => templateFn(product));
+    const htmlItems = products?.map((product) => templateFn(product)).join("");
     parentElement.insertAdjacentHTML(position, htmlItems);
 }
