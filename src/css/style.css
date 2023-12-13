@@ -66,6 +66,7 @@ body {
 
 .product-card {
   display: flex;
+  padding:1em;
   justify-content: center;
   align-items: center;
 }
