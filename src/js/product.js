@@ -2,7 +2,7 @@ import { fetchRecipe } from "./api.mjs";
 import { getLocalStorage, getParam, renderListWithTemplate, setLocalStorage } from "./utils.mjs";
 
 async function getRecipe() {
-  const id = getParam('movieId');
+  const id = getParam('recipeId');
   const cached = getLocalStorage(id);
 
   const recipe = cached ? cached : await fetchRecipe(id);
