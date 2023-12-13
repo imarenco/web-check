@@ -15,7 +15,7 @@ async function getRecipe() {
 
 function renderInstruction(product) {
   return `<li class="ingredient_item">
-    ${product.number}. ${product?.step} Ingredients: ${product.ingredients.map(ingredient => ingredient.name).join(', ')}
+    ${product.number}. ${product?.step} Ingredients: ${product.ingredients.map(ingredient => ingredient.name).join(' ')}
   .</li>`
 }
 
