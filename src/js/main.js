@@ -1,9 +1,12 @@
 import { fetchRecipes } from "./api.mjs";
-import { getLocalStorage, renderListWithTemplate, setLocalStorage } from "./utils.mjs";
+import { getLocalStorage, renderListWithTemplate, setLocalStorage, debounce } from "./utils.mjs";
 
 const input = document.querySelector("#search");
 
-input.addEventListener("input", updateValue);
+
+input.addEventListener("input", debounce((event) => {
+  updateValue(event);
+}, 1000));
 
 async function updateValue(event) {
   const query = event?.target?.value || '';
